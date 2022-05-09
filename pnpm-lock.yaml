@@ -20,7 +20,7 @@ importers:
       execa: 6.1.0
       fast-glob: 3.2.11
       fs-extra: 10.1.0
-      husky: 7.0.4
+      husky: 8.0.1
       is-ci: 3.0.1
       lint-staged: 12.4.1
       prettier: 2.6.2
@@ -45,7 +45,7 @@ importers:
       execa: 6.1.0
       fast-glob: 3.2.11
       fs-extra: 10.1.0
-      husky: 7.0.4
+      husky: 8.0.1
       is-ci: 3.0.1
       lint-staged: 12.4.1
       prettier: 2.6.2
@@ -168,7 +168,7 @@ importers:
       vite: 2.9.8
       zod: 3.15.1
     dependencies:
-      '@fastify/static': 5.0.2
+      '@fastify/static': 5.0.2_supports-color@9.2.2
       '@pnpm/read-package-json': 6.0.2
       '@yeuxjs/runtime': link:../runtime
       '@yeuxjs/types': link:../types
@@ -441,7 +441,7 @@ packages:
       ajv: 6.12.6
     dev: true
 
-  /@fastify/static/5.0.2:
+  /@fastify/static/5.0.2_supports-color@9.2.2:
     resolution: {integrity: sha512-HvyXZ5a7hUHoSBRq9jKUuKIUCkHMkCDcmiAeEmixXlGOx8pEWx3NYOIaiivcjWa6/NLvfdUT+t/jzfVQ2PA7Gw==}
     dependencies:
       content-disposition: 0.5.4
@@ -450,7 +450,9 @@ packages:
       glob: 7.2.0
       p-limit: 3.1.0
       readable-stream: 3.6.0
-      send: 0.17.2
+      send: 0.17.2_supports-color@9.2.2
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@humanwhocodes/config-array/0.9.5:
@@ -1253,10 +1255,16 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /debug/2.6.9:
+  /debug/2.6.9_supports-color@9.2.2:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
+      supports-color: 9.2.2
     dev: false
 
   /debug/4.3.4:
@@ -2174,9 +2182,9 @@ packages:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
 
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
@@ -3042,11 +3050,11 @@ packages:
     dependencies:
       lru-cache: 6.0.0
 
-  /send/0.17.2:
+  /send/0.17.2_supports-color@9.2.2:
     resolution: {integrity: sha512-UJYB6wFSJE3G00nEivR5rgWp8c2xXvJ3OPWPhmuteU0IKj8nKbG3DrjiOmLwpnHGYWAVwA69zmTm++YG0Hmwww==}
     engines: {node: '>= 0.8.0'}
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9_supports-color@9.2.2
       depd: 1.1.2
       destroy: 1.0.4
       encodeurl: 1.0.2
@@ -3059,6 +3067,8 @@ packages:
       on-finished: 2.3.0
       range-parser: 1.2.1
       statuses: 1.5.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /set-cookie-parser/2.4.8:
