@@ -9,7 +9,7 @@
   "bugs": "https://github.com/escapace/yeux/issues",
   "dependencies": {
     "@fastify/middie": "8.0.0",
-    "@fastify/static": "6.4.0",
+    "@fastify/static": "6.4.1",
     "@pnpm/read-package-json": "6.0.6",
     "@yeuxjs/runtime": "workspace:*",
     "@yeuxjs/types": "workspace:*",
@@ -19,12 +19,12 @@
     "execa": "6.1.0",
     "fs-extra": "10.1.0",
     "lodash-es": "4.17.21",
-    "mlly": "0.5.4",
+    "mlly": "0.5.5",
     "semver": "7.3.7",
     "source-map-support": "0.5.21",
     "split": "1.0.1",
     "supports-color": "9.2.2",
-    "zod": "3.17.9"
+    "zod": "3.17.10"
   },
   "devDependencies": {
     "@pnpm/types": "8.4.0",
