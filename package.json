@@ -28,7 +28,7 @@
     "prettier-config-escapace": "1.0.5",
     "semver": "7.5.1",
     "syncpack": "10.1.0",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   },
   "engines": {
     "node": ">= 18.2.0",
