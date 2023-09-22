@@ -52,7 +52,7 @@
     "eslint-plugin-no-null": "1.0.2",
     "prettier": "3.0.3",
     "prettier-config-escapace": "1.0.6",
-    "rollup": "3.28.0",
+    "rollup": "3.29.2",
     "typescript": "5.2.2",
     "vite": "4.4.9",
     "workbox-build": "7.0.0"
