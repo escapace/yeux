@@ -209,8 +209,8 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
       vite:
-        specifier: 4.5.0
-        version: 4.5.0(@types/node@20.10.0)(lightningcss@1.22.1)
+        specifier: 4.5.1
+        version: 4.5.1(@types/node@20.10.0)(lightningcss@1.22.1)
 
   packages/plugin-lightningcss:
     dependencies:
@@ -261,8 +261,8 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
       vite:
-        specifier: 4.5.0
-        version: 4.5.0(@types/node@20.10.0)(lightningcss@1.22.1)
+        specifier: 4.5.1
+        version: 4.5.1(@types/node@20.10.0)(lightningcss@1.22.1)
 
   packages/plugin-write-assets:
     devDependencies:
@@ -309,14 +309,14 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
       vite:
-        specifier: 4.5.0
-        version: 4.5.0(@types/node@20.10.0)(lightningcss@1.22.1)
+        specifier: 4.5.2
+        version: 4.5.2(@types/node@20.10.0)
 
   packages/types:
     dependencies:
       vite:
         specifier: '>=4.5.0'
-        version: 4.5.0(@types/node@20.10.0)(lightningcss@1.22.1)
+        version: 4.5.2(@types/node@20.10.0)
     devDependencies:
       '@types/node':
         specifier: 20.10.0
@@ -488,8 +488,8 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
       vite:
-        specifier: 4.5.0
-        version: 4.5.0(@types/node@20.10.0)(lightningcss@1.22.1)
+        specifier: 4.5.1
+        version: 4.5.1(@types/node@20.10.0)(lightningcss@1.22.1)
       workbox-build:
         specifier: 7.0.0
         version: 7.0.0(supports-color@9.4.0)
@@ -6565,8 +6565,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vite@4.5.0(@types/node@20.10.0)(lightningcss@1.22.1):
-    resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
+  /vite@4.5.1(@types/node@20.10.0)(lightningcss@1.22.1):
+    resolution: {integrity: sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6596,6 +6596,42 @@ packages:
       '@types/node': 20.10.0
       esbuild: 0.18.20
       lightningcss: 1.22.1
+      postcss: 8.4.32
+      rollup: 3.29.4
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
+  /vite@4.5.2(@types/node@20.10.0):
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 20.10.0
+      esbuild: 0.18.20
       postcss: 8.4.32
       rollup: 3.29.4
     optionalDependencies:
