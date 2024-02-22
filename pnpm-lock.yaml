@@ -359,7 +359,7 @@ importers:
         version: 8.0.6
       '@rollup/pluginutils':
         specifier: ^5.0.5
-        version: 5.1.0(rollup@3.29.4)
+        version: 5.1.0(rollup@4.11.0)
       '@yeuxjs/types':
         specifier: workspace:*
         version: link:../types
@@ -482,8 +482,8 @@ importers:
         specifier: 1.0.6
         version: 1.0.6
       rollup:
-        specifier: 3.29.4
-        version: 3.29.4
+        specifier: 4.11.0
+        version: 4.11.0
       typescript:
         specifier: 5.3.2
         version: 5.3.2
@@ -2480,7 +2480,7 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@rollup/pluginutils@5.1.0(rollup@3.29.4):
+  /@rollup/pluginutils@5.1.0(rollup@4.11.0):
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2492,8 +2492,99 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.29.4
+      rollup: 4.11.0
     dev: false
+
+  /@rollup/rollup-android-arm-eabi@4.11.0:
+    resolution: {integrity: sha512-BV+u2QSfK3i1o6FucqJh5IK9cjAU6icjFFhvknzFgu472jzl0bBojfDAkJLBEsHFMo+YZg6rthBvBBt8z12IBQ==}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-android-arm64@4.11.0:
+    resolution: {integrity: sha512-0ij3iw7sT5jbcdXofWO2NqDNjSVVsf6itcAkV2I6Xsq4+6wjW1A8rViVB67TfBEan7PV2kbLzT8rhOVWLI2YXw==}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-darwin-arm64@4.11.0:
+    resolution: {integrity: sha512-yPLs6RbbBMupArf6qv1UDk6dzZvlH66z6NLYEwqTU0VHtss1wkI4UYeeMS7TVj5QRVvaNAWYKP0TD/MOeZ76Zg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-darwin-x64@4.11.0:
+    resolution: {integrity: sha512-OvqIgwaGAwnASzXaZEeoJY3RltOFg+WUbdkdfoluh2iqatd090UeOG3A/h0wNZmE93dDew9tAtXgm3/+U/B6bw==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-arm-gnueabihf@4.11.0:
+    resolution: {integrity: sha512-X17s4hZK3QbRmdAuLd2EE+qwwxL8JxyVupEqAkxKPa/IgX49ZO+vf0ka69gIKsaYeo6c1CuwY3k8trfDtZ9dFg==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-arm64-gnu@4.11.0:
+    resolution: {integrity: sha512-673Lu9EJwxVB9NfYeA4AdNu0FOHz7g9t6N1DmT7bZPn1u6bTF+oZjj+fuxUcrfxWXE0r2jxl5QYMa9cUOj9NFg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-arm64-musl@4.11.0:
+    resolution: {integrity: sha512-yFW2msTAQNpPJaMmh2NpRalr1KXI7ZUjlN6dY/FhWlOclMrZezm5GIhy3cP4Ts2rIAC+IPLAjNibjp1BsxCVGg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-riscv64-gnu@4.11.0:
+    resolution: {integrity: sha512-kKT9XIuhbvYgiA3cPAGntvrBgzhWkGpBMzuk1V12Xuoqg7CI41chye4HU0vLJnGf9MiZzfNh4I7StPeOzOWJfA==}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-gnu@4.11.0:
+    resolution: {integrity: sha512-6q4ESWlyTO+erp1PSCmASac+ixaDv11dBk1fqyIuvIUc/CmRAX2Zk+2qK1FGo5q7kyDcjHCFVwgGFCGIZGVwCA==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-musl@4.11.0:
+    resolution: {integrity: sha512-vIAQUmXeMLmaDN78HSE4Kh6xqof2e3TJUKr+LPqXWU4NYNON0MDN9h2+t4KHrPAQNmU3w1GxBQ/n01PaWFwa5w==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-win32-arm64-msvc@4.11.0:
+    resolution: {integrity: sha512-LVXo9dDTGPr0nezMdqa1hK4JeoMZ02nstUxGYY/sMIDtTYlli1ZxTXBYAz3vzuuvKO4X6NBETciIh7N9+abT1g==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-win32-ia32-msvc@4.11.0:
+    resolution: {integrity: sha512-xZVt6K70Gr3I7nUhug2dN6VRR1ibot3rXqXS3wo+8JP64t7djc3lBFyqO4GiVrhNaAIhUCJtwQ/20dr0h0thmQ==}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  /@rollup/rollup-win32-x64-msvc@4.11.0:
+    resolution: {integrity: sha512-f3I7h9oTg79UitEco9/2bzwdciYkWr8pITs3meSDSlr1TdvQ7IxkQaaYN2YqZXX5uZhiYL+VuYDmHwNzhx+HOg==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
 
   /@surma/rollup-plugin-off-main-thread@2.2.3:
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -2527,7 +2618,6 @@ packages:
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
-    dev: false
 
   /@types/express-serve-static-core@4.17.41:
     resolution: {integrity: sha512-OaJ7XLaelTgrvlZD8/aa0vvvxZdUmlCn6MtWeB7TkiKW70BQLc9XEPpDLPdbo52ZhXUCrznlWdCHWxJWtdyajA==}
@@ -5856,6 +5946,28 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
+  /rollup@4.11.0:
+    resolution: {integrity: sha512-2xIbaXDXjf3u2tajvA5xROpib7eegJ9Y/uPlSFhXLNpK9ampCczXAhLEb5yLzJyG3LAdI1NWtNjDXiLyniNdjQ==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+    dependencies:
+      '@types/estree': 1.0.5
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.11.0
+      '@rollup/rollup-android-arm64': 4.11.0
+      '@rollup/rollup-darwin-arm64': 4.11.0
+      '@rollup/rollup-darwin-x64': 4.11.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.11.0
+      '@rollup/rollup-linux-arm64-gnu': 4.11.0
+      '@rollup/rollup-linux-arm64-musl': 4.11.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.11.0
+      '@rollup/rollup-linux-x64-gnu': 4.11.0
+      '@rollup/rollup-linux-x64-musl': 4.11.0
+      '@rollup/rollup-win32-arm64-msvc': 4.11.0
+      '@rollup/rollup-win32-ia32-msvc': 4.11.0
+      '@rollup/rollup-win32-x64-msvc': 4.11.0
+      fsevents: 2.3.3
+
   /run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
@@ -6734,6 +6846,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
