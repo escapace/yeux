@@ -12,7 +12,7 @@
     "@types/lodash-es": "4.17.12",
     "@types/mocha": "10.0.6",
     "@types/node": "20.11.30",
-    "c8": "9.1.0",
+    "c8": "10.1.2",
     "chai": "5.1.0",
     "esbuild": "0.20.2",
     "lint-staged": "15.2.2",
