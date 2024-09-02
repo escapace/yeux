@@ -29,7 +29,7 @@
     "prettier": "3.2.5",
     "prettier-config-escapace": "1.2.0",
     "semver": "7.6.0",
-    "syncpack": "12.3.0",
+    "syncpack": "13.0.0",
     "typescript": "5.4.3",
     "typescript-eslint": "7.6.0"
   },
